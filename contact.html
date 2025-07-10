@@ -40,12 +40,12 @@
             <!--Nombre y Navegacion-->
             <div class="nombre-navegacion ">
                 <h1>
-                    <a href="/dev-projects/index.html">Jpn Culture</a>
+                    <a href="index.html">Jpn Culture</a>
                 </h1>
                 <nav>
-                    <a href="/dev-projects/aboutus.html">About Us</a>
-                    <a href="/dev-projects/coaching.html">Coaching</a>
-                    <a href="/dev-projects/contact.html">Contact</a>
+                    <a href="aboutus.html">About Us</a>
+                    <a href="coaching.html">Coaching</a>
+                    <a href="contact.html">Contact</a>
                 </nav>
             </div>
 
@@ -78,20 +78,31 @@
     <h3>Fill out the form</h3>
 
     <form class="formulario">
-        <fieldset>
+        <fieldset class="info-field">
             <legend>Personal Information</legend>
 
-            <label for="nombre">Name</label>
-            <input type="text" placeholder="name" id="nombre">
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                
+                <div style="display: flex; flex-direction: column;">
+                    <label for="nombre">Name:</label>
+                    <input type="text" placeholder="Name" id="nombre">
+                </div>
 
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Email" id="email">
+                <div style="display: flex; flex-direction: column;">
+                    <label for="email">E-mail:</label>
+                    <input type="email" placeholder="Email" id="email">
+                </div>
 
-            <label for="phone">Phone Number</label>
-            <input type="tel" placeholder="phone nomber" id="phone">
+                <div style="display: flex; flex-direction: column;">
+                    <label for="phone">Contact:</label>
+                    <input type="tel" placeholder="phone nomber" id="phone">
+                </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message"></textarea>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="message">Message:</label>
+                    <textarea id="message"></textarea>
+                </div>
+            </div>
         </fieldset>
 
         <fieldset>
@@ -106,7 +117,7 @@
         </fieldset>
 
         <fieldset>
-            <legend>How would you like up to contact you?</legend>
+            <legend>How would you like us to contact you?</legend>
 
             <div class="forma-contacto">
                 <label for="contactar-telefono">Phone</label>
@@ -125,7 +136,8 @@
             <input type="time" id="hora" min="09:00" max="18:00">
 
         </fieldset>
-        <input type="submit" value="Enviar" class="boton-verde">
+        
+        <input type="submit" value="Enviar" class="boton-verde" style="margin-top: 5%;">
     </form>
 
     <!--Footer-->
